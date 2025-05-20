@@ -44,14 +44,41 @@ function getCity() {
 }
 
 if (returnAge) {
-    console.log(getAgeInfo(30));
+    // console.log(getAgeInfo(30));
 } else {
-    console.log(getCity());
+    // console.log(getCity());
 }
 
 // NOTE: condition ? statementForTrue : statementForFalse
 
-returnAge ? console.log(getAgeInfo(30)) : console.log(getCity());
+// returnAge ? console.log(getAgeInfo(30)) : console.log(getCity());
 
 
 
+// TODO: Object and Array Destructuring;
+// TODO: Shorthand Property Names;
+
+const id = 1;
+const title = "Product 1";
+const rating = 5;
+
+
+const product = {
+    id,
+    title,
+    rating
+}
+
+// console.log(product);
+
+const productOne = {
+    productName: "productOne",
+    productDescription: "Product Description"
+}
+
+// let productName = productOne.productName;
+// let productDescription = productOne.ProductDescription
+
+const { productName, productDescription } = productOne
+
+console.log(productName, productDescription);
