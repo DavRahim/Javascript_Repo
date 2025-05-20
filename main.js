@@ -27,6 +27,31 @@ let surName = "Mohammad";
 
 let prefix = "Mr.";
 
-console.log(prefix + " " + firstName + " " + surName);
+// console.log(prefix + " " + firstName + " " + surName);
 
-console.log(`${prefix} ${firstName} ${surName}`);
+// console.log(`${prefix} ${firstName} ${surName}`);
+
+// TODO: Ternary Operator
+
+let returnAge = true;
+
+function getAgeInfo(age) {
+    return `This person is ${age} year old`
+}
+
+function getCity() {
+    return 'This person is from USA'
+}
+
+if (returnAge) {
+    console.log(getAgeInfo(30));
+} else {
+    console.log(getCity());
+}
+
+// NOTE: condition ? statementForTrue : statementForFalse
+
+returnAge ? console.log(getAgeInfo(30)) : console.log(getCity());
+
+
+
