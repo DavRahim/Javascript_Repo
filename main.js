@@ -81,4 +81,46 @@ const productOne = {
 
 const { productName, productDescription } = productOne
 
-console.log(productName, productDescription);
+// console.log(productName, productDescription);
+
+let arr = ["jhon", "Doe", "Random"];
+
+// let arrFirstEle = arr[0];
+// let arrSecondEle = arr[1];
+
+
+let [arrFirstEle, arrSecondEle, arrThirddEle] = arr
+
+// console.log(arrFirstEle, arrSecondEle, arrThirddEle);
+
+
+
+// TODO: Default Parameters
+
+function sum(numOne = 1, numTwo = 1) {
+    return numOne + numTwo
+}
+
+let result = sum(10, 13)
+
+// console.log(result);
+
+
+// TODO: spread Operators, rest operators
+
+
+const arrOne = [11, 222, 3, 2, 2, 2, 2, 45];
+const arrTwo = [23432142, 23432, 234]
+
+
+// console.log([...arrOne, ...arrTwo]);
+
+
+function someThing(a, b, ...c) {
+    console.log(a, b, c)
+    return "Hello"
+}
+
+console.log(someThing(1, 2, 3,3,68,7));
+
+
